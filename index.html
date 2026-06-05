@@ -73,11 +73,19 @@
       <section id="overview" class="section">
         <div class="section__inner section__inner--wide">
           <h2 class="section-title">Overview</h2>
-          <figure class="figure-inline">
+          <figure class="figure-inline figure-inline--overview">
             <img
               src="assets/teaser.png"
               alt="Teaser figure summarizing the World Pilot method, benchmark gains, and real-robot tasks."
             />
+            <figcaption class="figure-caption figure-caption--overview">
+              World Pilot steers a VLA with priors from a World-Action Model. VLA methods generate actions from a
+              VLM’s encoding of the scene. World Pilot adds two priors from a WAM into the decision chain, with
+              Latent Steering routing a scene-evolution latent into VLM hidden states and Action Steering feeding a
+              trajectory-level motion prior to the action generator. This gives the VLA an anticipated view of the
+              scene and a motion hint alongside its semantic conditioning. World Pilot reaches state-of-the-art
+              performance on LIBERO-Plus and real-robot tasks.
+            </figcaption>
           </figure>
         </div>
       </section>
@@ -107,11 +115,11 @@
         <div class="section__inner section__inner--wide">
           <h2 class="section-title">Demo</h2>
           <div class="video-shell" data-video-shell>
-            <video controls playsinline preload="metadata" data-video-player>
-              <source src="assets/WorldPilot-video.mp4" type="video/mp4" />
+            <video controls playsinline preload="none" poster="assets/poster.png" data-video-player>
+              <source src="assets/WorldPilot-video-web.mp4" type="video/mp4" />
             </video>
             <div class="video-fallback" data-video-fallback hidden>
-              Add <code>assets/WorldPilot-video.mp4</code> to preview the project video locally.
+              Add <code>assets/WorldPilot-video-web.mp4</code> to preview the project video locally.
             </div>
           </div>
         </div>

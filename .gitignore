@@ -5,3 +5,8 @@ docs/superpowers/
  __pycache__/
 *.pyc
 .env
+tests/
+
+assets/WorldPilot-video.mp4
+.superpowers  
+.worktrees

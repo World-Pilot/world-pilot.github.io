@@ -61,10 +61,24 @@
                 <small>Coming Soon</small>
               </span>
               <a class="button" href="#video">Demo</a>
-              <span class="button button--disabled" aria-disabled="true">
-                <span>Code</span>
-                <small>Coming Soon</small>
-              </span>
+              <a class="button" href="https://github.com/ZefuLin/WorldPilot" target="_blank" rel="noreferrer">Code</a>
+              <a class="button" href="https://huggingface.co/Chedan86/WorldPilot-LIBERO" target="_blank" rel="noreferrer">
+                Hugging Face
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" class="section">
+        <div class="section__inner section__inner--wide">
+          <h2 class="section-title">Demo</h2>
+          <div class="video-shell" data-video-shell>
+            <video controls playsinline preload="none" poster="assets/poster.png" data-video-player>
+              <source src="assets/WorldPilot-video-web.mp4" type="video/mp4" />
+            </video>
+            <div class="video-fallback" data-video-fallback hidden>
+              Add <code>assets/WorldPilot-video-web.mp4</code> to preview the project video locally.
             </div>
           </div>
         </div>
@@ -111,19 +125,6 @@
         </div>
       </section>
 
-      <section id="video" class="section">
-        <div class="section__inner section__inner--wide">
-          <h2 class="section-title">Demo</h2>
-          <div class="video-shell" data-video-shell>
-            <video controls playsinline preload="none" poster="assets/poster.png" data-video-player>
-              <source src="assets/WorldPilot-video-web.mp4" type="video/mp4" />
-            </video>
-            <div class="video-fallback" data-video-fallback hidden>
-              Add <code>assets/WorldPilot-video-web.mp4</code> to preview the project video locally.
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="method" class="section">
         <div class="section__inner section__inner--wide">
@@ -136,9 +137,9 @@
             <figcaption class="figure-caption figure-caption--method">
               <strong>World Pilot architecture.</strong>
               A semantic pathway encodes images and language with a VLM into hidden states.
-              Two prior pathways from a video-pretrained World-Action Model enter the same decision chain:
-              <em>Dynamic Steering</em> fuses a scene-evolution latent into the VLM hidden states, and
-              <em>Action Steering</em> encodes the anticipated trajectory into a single prior token for the
+              Two prior pathways from a World-Action Model enter the same decision chain,
+              with <em>Latent Steering</em> routing a scene-evolution latent into the VLM hidden states and
+              <em>Action Steering</em> compressing the anticipated trajectory into a prior token for the
               flow-matching action generator.
             </figcaption>
           </figure>
@@ -216,7 +217,7 @@
             <pre class="citation-panel__code"><code id="citation-code">@inproceedings{worldpilot2026,
   title = {World Pilot: Steering Vision-Language-Action Models with World-Action Priors},
   author = {Zefu Lin and Rongxu Cui and Junjia Xu and Xiaojuan Jin and Wenling Li and Lue Fan and Zhaoxiang Zhang},
-  booktitle = {Conference on Robot Learning},
+  booktitle = {Coming Soon},
   year = {2026}
 }</code></pre>
           </div>
